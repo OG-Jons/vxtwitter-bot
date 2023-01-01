@@ -1,0 +1,28 @@
+{
+  "name": "vxtwitter-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that automatically detects messages that contain a Twitter link and posts the VX-Twitter embed.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord.js",
+    "twitter",
+    "bot",
+    "vxtwitter"
+  ],
+  "author": {
+    "name": "OG-Jons",
+    "url": "https://github.com/OG-Jons"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
