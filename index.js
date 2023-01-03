@@ -12,11 +12,7 @@ const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits
 client.once(Events.ClientReady, c => {
     console.log(`Ready! Logged in as ${c.user.tag}!`);
     client.user.setPresence({
-        status: "online",  //You can show online, idle....
-        game: {
-            name: "for twitter link",  //The message shown
-            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
-        }
+        status: "idle"
     });
 });
 
