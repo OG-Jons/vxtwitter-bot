@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 require('dotenv').config()
-const {Client, Events, GatewayIntentBits} = require('discord.js');
+const {Client, Events, GatewayIntentBits, ActivityType} = require('discord.js');
 
 const twitterRegex = /https:\/\/(mobile\.)?twitter\.com\/[a-zA-Z0-9_]{1,15}\/status\/[0-9]+/
 
@@ -11,9 +11,7 @@ const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits
 // We use 'c' for the event parameter to keep it separate from the already defined 'client'
 client.once(Events.ClientReady, c => {
     console.log(`Ready! Logged in as ${c.user.tag}!`);
-    client.user.setActivity({
-        name: ""
-    })
+    client.user.setActivity('your twitter links', { type: ActivityType.Watching });
 });
 
 client.on(Events.MessageCreate, async message => {
