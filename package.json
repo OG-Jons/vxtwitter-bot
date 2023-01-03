@@ -1,6 +1,6 @@
 {
   "name": "vxtwitter-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discord bot that automatically detects messages that contain a Twitter link and posts the VX-Twitter embed.",
   "main": "index.js",
   "scripts": {
